@@ -9,7 +9,8 @@ module.exports = {
       network_id: "*", // Match any network id
     },
     rinkeby: {
-      provider: () => new HDWalletProvider(process.env.SECRET_KEY, process.env.ENDPOINT_URL),
+      provider: () =>
+        new HDWalletProvider(process.env.REACT_APP_SECRET_KEY, process.env.REACT_APP_ENDPOINT_URL),
       network_id: 4, // Rinkeby's id
       gas: 5500000, // Rinkeby has a lower block limit than mainnet
       confirmations: 2, // # of confs to wait between deployments. (default: 0)

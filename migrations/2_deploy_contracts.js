@@ -1,5 +1,5 @@
 const Web3 = require("web3");
-const web3 = new Web3(Web3.givenProvider || process.env.ENDPOINT_URL);
+const web3 = new Web3(Web3.givenProvider || process.env.REACT_APP_ENDPOINT_URL);
 
 const { artifacts } = require("truffle");
 

@@ -17,10 +17,11 @@
     "import/namespace": "off"
   },
   "parserOptions": {
-    "ecmaVersion": "latest",
+    "ecmaVersion": 9,
     "sourceType": "module",
     "ecmaFeatures": {
-      "jsx": true
+      "jsx": true,
+      "modules": true
     }
   },
   "env": {
